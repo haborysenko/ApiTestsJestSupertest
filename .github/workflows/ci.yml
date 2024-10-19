@@ -1,0 +1,28 @@
+name: Node.js CI
+
+on:
+  push:
+    branches:
+      - main  # Triggers on push to the main branch
+  pull_request:
+    branches:
+      - main  # Triggers when a PR targets the main branch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x]  # Test on Node.js 14.x and 16.x
+
+    steps:
+    - uses: actions/checkout@v2  # Check out the code
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}  # Setup node
+
+    - run: npm install  # Install dependencies
+    - run: npm test     # Run the tests
