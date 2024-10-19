@@ -27,6 +27,12 @@ Make sure that all required dependencies are installed by running:
 npm install
 ```
 
+If you encounter deprication warnings installing updates may help.
+```bash  
+npm update jest supertest
+npm install -g npm
+```
+
 This command will install all necessary Node.js packages, including **Jest** and **Supertest**, which are required to run the tests.
 
 ### 3. Set Up Environment Variables
