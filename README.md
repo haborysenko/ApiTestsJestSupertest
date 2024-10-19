@@ -39,7 +39,7 @@ touch .env
 
 4. Add the following content to the `.env` file:
 ```bash  
-GOREST_API_TOKEN=your_api_token_here  
+GOREST_API_TOKEN=<your_api_token_here>  
 GOREST_BASE_URL=https://gorest.co.in/public/v2
 ```
 
