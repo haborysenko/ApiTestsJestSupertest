@@ -37,8 +37,9 @@ Clone the repository to your local machine and navigate to the project directory
 
 ### 2. Install Dependencies
 Make sure that all required dependencies are installed by running:
-bash  
+```bash  
 `npm install`
+```
 
 This command will install all necessary Node.js packages, including **Jest** and **Supertest**, which are required to run the tests.
 
@@ -46,21 +47,24 @@ This command will install all necessary Node.js packages, including **Jest** and
 You need to set up environment variables to authenticate with the **GoRest API**.
 
 1. Create a `.env` file in the root directory of your project (if it doesn't already exist):
-bash  
+```bash  
 `touch .env`
+```
 
-2. Add the following content to the `.env` file:
-bash  
+4. Add the following content to the `.env` file:
+```bash  
 `GOREST_API_TOKEN=your_api_token_here`  
 `GOREST_BASE_URL=https://gorest.co.in/public/v2`
+```
 
 Replace `your_api_token_here` with your actual **GoRest API token**, which you can obtain by registering at [GoRest](https://gorest.co.in).
 
 ## Running the Tests
 ### 1. Run All Tests
 To execute the entire test suite, run the following command:
-bash  
+```bash  
 `npm test`
+```
 
 This will:
 - Run all test cases located in the `tests/` directory.
