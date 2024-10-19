@@ -24,7 +24,7 @@ cd ApiTestsJestSupertest
 ### 2. Install Dependencies
 Make sure that all required dependencies are installed by running:
 ```bash  
-`npm install`
+npm install
 ```
 
 This command will install all necessary Node.js packages, including **Jest** and **Supertest**, which are required to run the tests.
@@ -34,13 +34,13 @@ You need to set up environment variables to authenticate with the **GoRest API**
 
 1. Create a `.env` file in the root directory of your project (if it doesn't already exist):
 ```bash  
-`touch .env`
+touch .env
 ```
 
 4. Add the following content to the `.env` file:
 ```bash  
-`GOREST_API_TOKEN=your_api_token_here`  
-`GOREST_BASE_URL=https://gorest.co.in/public/v2`
+GOREST_API_TOKEN=your_api_token_here  
+GOREST_BASE_URL=https://gorest.co.in/public/v2
 ```
 
 Replace `your_api_token_here` with your actual **GoRest API token**, which you can obtain by registering at [GoRest](https://gorest.co.in).
