@@ -49,7 +49,7 @@ Replace `your_api_token_here` with your actual **GoRest API token**, which you c
 ### 1. Run All Tests
 To execute the entire test suite, run the following command:
 ```bash  
-`npm test`
+npm test
 ```
 
 This will:
