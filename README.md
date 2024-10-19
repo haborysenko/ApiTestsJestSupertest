@@ -1,18 +1,19 @@
 # ApiTestsJestSupertest
 ## Table of Contents
 - [Project Overview](#project-overview)
-- [Project Setup](#project-setup)
+- [Project Local Setup](#project-setup)
   - [1. Clone the Repository](#1-clone-the-reposiory)
   - [2. Install Dependencies](#2-install-dependencies)
   - [3. Set Up Environment Variables](#3-set-up-environment-variables)
 - [Running the Tests](#running-the-tests)
   - [1. Run All Tests](#1-run-all-tests)
 - [Test Structure](#test-structure)
+- [Github CI-CD](#github-ci-cd)
 
 ## Project Overview
 This project contains end-to-end API tests for CRUD operations on the **GoRest API** using **Jest** and **Supertest**.
 
-## Project Setup
+## Project Local Setup
 ### 1. Clone the Repository
 
 Clone the repository to your local machine and navigate to the project directory:
@@ -70,3 +71,8 @@ The tests are structured to ensure reusability and maintainability:
 - **`support/apiClient.js`**: Contains the reusable API client for making HTTP requests (GET, POST, PUT, DELETE).
 - **`support/utils.js`**: Provides utility functions like generating unique emails and fetching environment variables.
 - **`tests/`**: Contains all the CRUD tests for user operations on the GoRest API
+
+## Github CI-CD
+This project includes a GitHub Actions CI/CD pipeline.
+The workflow runs automatically for every push or pull request to the `main` branch.
+In addition, the CI/CD pipeline can be manually triggered from the GitHub Actions tab in the repository.
