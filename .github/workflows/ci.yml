@@ -16,16 +16,24 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: List repository contents
+        run: ls -la
+
+      - name: Navigate to project directory
+        run: |
+          cd ApiTestsJestSupertest
+          ls -la
+
       - name: Install dependencies
-        working-directory: ApiTestsJestSupertest
         run: npm install
+        working-directory: ApiTestsJestSupertest
 
       - name: Set up environment variables
-        working-directory: ApiTestsJestSupertest
         run: |
           echo "GOREST_API_TOKEN=${{ secrets.GOREST_API_TOKEN }}" >> .env
           echo "GOREST_BASE_URL=${{ secrets.GOREST_BASE_URL }}" >> .env
+        working-directory: ApiTestsJestSupertest
 
       - name: Run tests
-        working-directory: ApiTestsJestSupertest
         run: npm test
+        working-directory: ApiTestsJestSupertest
