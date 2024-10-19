@@ -3,7 +3,6 @@ This repository contains end-to-end API tests for CRUD operations on the **GoRes
 
 ## Table of Contents
 - [Project Overview](#project-overview)
-- [Project Structure](#project-structure)
 - [Project Setup](#project-setup)
   - [1. Clone the Repository](#1-clone-the-reposiory)
   - [2. Install Dependencies](#2-install-dependencies)
@@ -14,17 +13,6 @@ This repository contains end-to-end API tests for CRUD operations on the **GoRes
 
 ## Project Overview
 This project contains end-to-end API tests for CRUD operations on the **GoRest API** using **Jest** and **Supertest**.
-
-## Project Structure
-├── support/
-│   ├── apiClient.js      # API client for reusable HTTP methods
-│   ├── utils.js          # Utility functions (e.g., unique email generation)
-├── tests/
-│   ├── users.test.js     # Test cases for CRUD operations on users
-├── .env                  # Environment variables (not committed to Git, find below instruction how to create this)
-├── .gitignore            # Ignored files and directories
-├── package.json          # Project dependencies and scripts
-└── README.md             # Project documentation
 
 ## Project Setup
 ### 1. Clone the Repository
