@@ -1,6 +1,4 @@
 # ApiTestsJestSupertest
-This repository contains end-to-end API tests for CRUD operations on the **GoRest API** using **Jest** and **Supertest**.
-
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Project Setup](#project-setup)
