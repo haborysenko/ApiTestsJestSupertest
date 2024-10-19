@@ -22,7 +22,8 @@ cd ApiTestsJestSupertest
 ```
 
 ### 2. Install Dependencies
-Make sure that all required dependencies are installed by running:
+Make sure that all required dependencies are installed by running next command.
+This command will install all necessary Node.js packages, including **Jest** and **Supertest**, which are required to run the tests.
 ```bash  
 npm install
 ```
@@ -34,8 +35,6 @@ npm update jest supertest
 ```bash  
 npm install -g npm
 ```
-
-This command will install all necessary Node.js packages, including **Jest** and **Supertest**, which are required to run the tests.
 
 ### 3. Set Up Environment Variables
 You need to set up environment variables to authenticate with the **GoRest API**.
