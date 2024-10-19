@@ -17,30 +17,37 @@ This project contains end-to-end API tests for CRUD operations on the **GoRest A
 
 Clone the repository to your local machine and navigate to the project directory:
 ```bash  
-`git clone https://github.com/haborysenko/ApiTestsJestSupertest.git`  
-`cd ApiTestsJestSupertest`
+git clone https://github.com/haborysenko/ApiTestsJestSupertest.git  
+cd ApiTestsJestSupertest
 ```
 
 ### 2. Install Dependencies
-Make sure that all required dependencies are installed by running:
+Make sure that all required dependencies are installed by running next command.
+This command will install all necessary Node.js packages, including **Jest** and **Supertest**, which are required to run the tests.
 ```bash  
-`npm install`
+npm install
 ```
 
-This command will install all necessary Node.js packages, including **Jest** and **Supertest**, which are required to run the tests.
+If you encounter deprecation warnings, installing updates may help.
+```bash  
+npm update jest supertest
+```
+```bash  
+npm install -g npm
+```
 
 ### 3. Set Up Environment Variables
 You need to set up environment variables to authenticate with the **GoRest API**.
 
 1. Create a `.env` file in the root directory of your project (if it doesn't already exist):
 ```bash  
-`touch .env`
+touch .env
 ```
 
 4. Add the following content to the `.env` file:
 ```bash  
-`GOREST_API_TOKEN=your_api_token_here`  
-`GOREST_BASE_URL=https://gorest.co.in/public/v2`
+GOREST_API_TOKEN=<your_api_token_here>  
+GOREST_BASE_URL=https://gorest.co.in/public/v2
 ```
 
 Replace `your_api_token_here` with your actual **GoRest API token**, which you can obtain by registering at [GoRest](https://gorest.co.in).
@@ -49,7 +56,7 @@ Replace `your_api_token_here` with your actual **GoRest API token**, which you c
 ### 1. Run All Tests
 To execute the entire test suite, run the following command:
 ```bash  
-`npm test`
+npm test
 ```
 
 This will:
