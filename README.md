@@ -30,9 +30,10 @@ This project contains end-to-end API tests for CRUD operations on the **GoRest A
 ### 1. Clone the Repository
 
 Clone the repository to your local machine and navigate to the project directory:
-bash  
+```bash  
 `git clone https://github.com/haborysenko/ApiTestsJestSupertest.git`  
 `cd ApiTestsJestSupertest`
+```
 
 ### 2. Install Dependencies
 Make sure that all required dependencies are installed by running:
