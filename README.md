@@ -27,9 +27,11 @@ Make sure that all required dependencies are installed by running:
 npm install
 ```
 
-If you encounter deprication warnings installing updates may help.
+If you encounter deprecation warnings, installing updates may help.
 ```bash  
 npm update jest supertest
+```
+```bash  
 npm install -g npm
 ```
 
