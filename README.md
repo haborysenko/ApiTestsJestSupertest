@@ -62,4 +62,4 @@ The tests are structured to ensure reusability and maintainability:
 
 - **`support/apiClient.js`**: Contains the reusable API client for making HTTP requests (GET, POST, PUT, DELETE).
 - **`support/utils.js`**: Provides utility functions like generating unique emails and fetching environment variables.
-- **`tests/users.test.js`**: Contains all the CRUD tests for user operations on the GoRest API
+- **`tests/`**: Contains all the CRUD tests for user operations on the GoRest API
