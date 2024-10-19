@@ -1,5 +1,5 @@
 # ApiTestsJestSupertest
-This repository contains end-to-end API tests using **Jest** and **Supertest**.
+This repository contains end-to-end API tests for CRUD operations on the **GoRest API** using **Jest** and **Supertest**.
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -71,9 +71,4 @@ The tests are structured to ensure reusability and maintainability:
 
 - **`support/apiClient.js`**: Contains the reusable API client for making HTTP requests (GET, POST, PUT, DELETE).
 - **`support/utils.js`**: Provides utility functions like generating unique emails and fetching environment variables.
-- **`tests/users.test.js`**: Contains all the CRUD tests for user operations on the GoRest API, including:
-  - **Create a user**: Test case for creating a new user and verifying the response.
-  - **Get user details**: Test case for retrieving the user's details and verifying the response.
-  - **Update a user**: Test case for updating the user's information and verifying the updated details.
-  - **Delete a user**: Test case for deleting the user and verifying that they are no longer retrievable.
-
+- **`tests/users.test.js`**: Contains all the CRUD tests for user operations on the GoRest API
