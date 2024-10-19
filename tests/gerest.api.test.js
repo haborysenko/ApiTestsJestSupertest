@@ -1,4 +1,4 @@
-const utils = require('../support/utils');
+const utils = require("../support/utils");
 const apiClient = require("../support/apiClient");
 
 describe("When performing CRUD operations on a user", () => {
@@ -56,9 +56,9 @@ describe("When performing CRUD operations on a user", () => {
   it("should update all user fields and verify the updated field values", async () => {
     const updatedUser = {
       name: updatedName,
-      email: updatedEmail,  
-      gender: updatedGender, 
-      status: updatedStatus, 
+      email: updatedEmail,
+      gender: updatedGender,
+      status: updatedStatus,
     };
 
     const response = await apiClient.put(`/users/${userId}`, updatedUser);
@@ -66,11 +66,11 @@ describe("When performing CRUD operations on a user", () => {
     console.log("Updated user response:", response.body);
 
     expect(response.statusCode).toBe(200);
-    expect(response.body).toHaveProperty("id", userId);  
-    expect(response.body).toHaveProperty("name", updatedName); 
-    expect(response.body).toHaveProperty("email", updatedEmail); 
-    expect(response.body).toHaveProperty("gender", updatedGender); 
-    expect(response.body).toHaveProperty("status", updatedStatus); 
+    expect(response.body).toHaveProperty("id", userId);
+    expect(response.body).toHaveProperty("name", updatedName);
+    expect(response.body).toHaveProperty("email", updatedEmail);
+    expect(response.body).toHaveProperty("gender", updatedGender);
+    expect(response.body).toHaveProperty("status", updatedStatus);
   });
 
   it("should retrieve the updated user and verify all updated field values", async () => {
@@ -80,10 +80,10 @@ describe("When performing CRUD operations on a user", () => {
 
     expect(response.statusCode).toBe(200);
     expect(response.body).toHaveProperty("id", userId);
-    expect(response.body).toHaveProperty("name", updatedName); 
-    expect(response.body).toHaveProperty("email", updatedEmail);  
-    expect(response.body).toHaveProperty("gender", updatedGender); 
-    expect(response.body).toHaveProperty("status", updatedStatus); 
+    expect(response.body).toHaveProperty("name", updatedName);
+    expect(response.body).toHaveProperty("email", updatedEmail);
+    expect(response.body).toHaveProperty("gender", updatedGender);
+    expect(response.body).toHaveProperty("status", updatedStatus);
   });
 
   it("should delete the user", async () => {
@@ -95,6 +95,6 @@ describe("When performing CRUD operations on a user", () => {
   it("should verify the user is no longer available by returning 404 on retrieval", async () => {
     const response = await apiClient.get(`/users/${userId}`);
 
-    expect(response.statusCode).toBe(404); 
+    expect(response.statusCode).toBe(404);
   });
 });

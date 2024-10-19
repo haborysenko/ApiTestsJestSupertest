@@ -1,10 +1,11 @@
 const request = require("supertest");
-require("dotenv").config(); 
+require("dotenv").config();
 
 class ApiClient {
   constructor() {
     // Load environment variables
-    this.baseUrl = process.env.GOREST_BASE_URL || "https://gorest.co.in/public/v2";
+    this.baseUrl =
+      process.env.GOREST_BASE_URL || "https://gorest.co.in/public/v2";
     this.token = `Bearer ${process.env.GOREST_API_TOKEN}`;
   }
 
